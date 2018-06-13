@@ -60,18 +60,18 @@ The following diagram should help there.
         14              none (always high)
         15              none (always high)
         16              none (always high)
-
+```
 Yes, I know the 4 unused bits are odd. That's just how it is. Not sure what plans
 Nintendo may have had for those at one point.
-   
+
 == Bluetooth Serial "Codes" ==
-```
-       The currently pressed buttons within the script are saved just as an actual SNES controller would:
-       as a 16-bit register, with one bit representing each button. In this script, a "HIGH" value indicates
-       a button that **hasn't** been pressed, as a SNES controller writes logic high for unpressed buttons.
-       There is one "code" for a button press, and one "code" for when a button is released. This reduces
-       the number of commands per cycle that need to be processed. Each 'code' is an ASCII character.
-       
+
+The currently pressed buttons within the script are saved just as an actual SNES controller would:
+as a 16-bit register, with one bit representing each button. In this script, a "HIGH" value indicates
+a button that **hasn't** been pressed, as a SNES controller writes logic high for unpressed buttons.
+There is one "code" for a button press, and one "code" for when a button is released. This reduces
+the number of commands per cycle that need to be processed. Each 'code' is an ASCII character.
+```      
        The codes are as follows:
       
         BUTTON      PRESS     RELEASE       
