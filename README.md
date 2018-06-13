@@ -3,6 +3,7 @@ An Arduino sketch that utilizes bluetooth to act as an SNES controller
 Created by Brandon Rolston
 
 == Requirements ==
+
 Tested on an Arduino Uno and an Arduino Mega, but it should work on any Arduino that
 has at least two available interrupt pins and a 16 MHz clock. This sketch also utilizes a 
 BlueSMiRF Silver, although any device that can output serial bluetooth data should work fine.
