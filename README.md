@@ -34,10 +34,10 @@ The following diagram should help there.
         to absolutely nothing. On some combo SNES/NES devices I have seen,
         they are often used for extra functions for custom controllers. You
         do not need to worry about them however.
-        ```
+```
        
 == Data Out Reference ==
-
+```
        If you notice buggy output when running this code on whatever you're using, here's the order
        of the buttons as they get pushed out on the Serial Data line.
        
@@ -59,11 +59,12 @@ The following diagram should help there.
         14              none (always high)
         15              none (always high)
         16              none (always high)
-        
+```
         Yes, I know the 4 unused bits are odd. That's just how it is. Not sure what plans
         Nintendo may have had for those at one point.
-        
+   
 == Bluetooth Serial "Codes" ==
+```
        The currently pressed buttons within the script are saved just as an actual SNES controller would:
        as a 16-bit register, with one bit representing each button. In this script, a "HIGH" value indicates
        a button that **hasn't** been pressed, as a SNES controller writes logic high for unpressed buttons.
@@ -88,7 +89,7 @@ The following diagram should help there.
         R           '3'       '4'
         
         As you can tell, I was *very* original with my character choices.
-        
+```
 == Basic Operation Info ==
 
 As the code functions, it doesn't even CARE when the SNES decides to poll the controller, it'll get that data
@@ -125,7 +126,7 @@ Even better, the fewer buttons are a single byte! Much faster on the processing 
 Anyway, if you are interested in making this modification, the following pinout and data order may be of interest:
 
 == NES Contoller Port == 
-        
+```
                   +----> Power
                   |
             5 +---------+  7    
@@ -137,9 +138,9 @@ Anyway, if you are interested in making this modification, the following pinout 
                 |  |  +----> Pulse
                 |  +-------> Latch
                 +----------> Data  
-                
+```
 == NES Controller Order ==
-
+```
         Clock Cycle     Button Reported
         ===========     ===============
         1               A
@@ -150,5 +151,5 @@ Anyway, if you are interested in making this modification, the following pinout 
         6               Down on joypad
         7               Left on joypad
         8               Right on joypad
-
+```
 You might notice that these orders are almost exactly the same. Isn't that handy?
