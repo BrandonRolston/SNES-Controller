@@ -11,6 +11,7 @@ If you want to make this work, you'll need to create (or reappropriate) a way to
 The following diagram should help there.
 
 == Controller Port Pinout Reference ==
+```
        ----------------------------- ---------------------
       |                             |                      \
       | (1)     (2)     (3)     (4) |   (5)     (6)     (7) |
@@ -32,6 +33,7 @@ The following diagram should help there.
         to absolutely nothing. On some combo SNES/NES devices I have seen,
         they are often used for extra functions for custom controllers. You
         do not need to worry about them however.
+        ```
        
 == Data Out Reference ==
 
