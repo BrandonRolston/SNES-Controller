@@ -60,9 +60,9 @@ The following diagram should help there.
         14              none (always high)
         15              none (always high)
         16              none (always high)
-```
-        Yes, I know the 4 unused bits are odd. That's just how it is. Not sure what plans
-        Nintendo may have had for those at one point.
+
+Yes, I know the 4 unused bits are odd. That's just how it is. Not sure what plans
+Nintendo may have had for those at one point.
    
 == Bluetooth Serial "Codes" ==
 ```
