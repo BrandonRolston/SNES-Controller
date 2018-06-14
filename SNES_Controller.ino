@@ -157,8 +157,9 @@ void loop()
 
 void latch()
 {
-  // If the button is unpressed
+  // latch the data
   packet = state;
+ // If the button is unpressed
   if ((((state) >> (0)) & 0x01) == 1)
   {
     // Set our pin high
