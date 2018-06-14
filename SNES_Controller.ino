@@ -144,7 +144,6 @@ void loop()
           index = 0; // Let's clear whatever that was. 
           break;
         }
-        //index = 0; // Reset the message buffer index
       }
       else 
       {
